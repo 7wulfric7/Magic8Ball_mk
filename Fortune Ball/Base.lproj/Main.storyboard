@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Fortune_Ball" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Canva - Photography of Stars and Galaxy" translatesAutoresizingMaskIntoConstraints="NO" id="wV4-JJ-lhv">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ЗАМИСЛИ ЖЕЛБА" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XbG-DT-iay">
+                                <rect key="frame" x="74" y="60.5" width="266" height="39"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="33"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qsV-rz-7w2">
+                                <rect key="frame" x="0.0" y="776" width="414" height="86"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="30"/>
+                                <size key="titleShadowOffset" width="4" height="1"/>
+                                <state key="normal" title="ПРАШАЈ">
+                                    <color key="titleColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="askButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vwD-8C-QGQ"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ЗАПОЧНИ" translatesAutoresizingMaskIntoConstraints="NO" id="0Jj-ah-h8u">
+                                <rect key="frame" x="44" y="100" width="326" height="668"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="wV4-JJ-lhv" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="6BZ-is-7Ov"/>
+                            <constraint firstItem="0Jj-ah-h8u" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" priority="999" id="80N-RV-ZpK"/>
+                            <constraint firstAttribute="bottom" secondItem="wV4-JJ-lhv" secondAttribute="bottom" id="8ox-NK-KUb"/>
+                            <constraint firstItem="qsV-rz-7w2" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="bottom" constant="-120" id="DH4-vK-5o5"/>
+                            <constraint firstItem="qsV-rz-7w2" firstAttribute="top" secondItem="0Jj-ah-h8u" secondAttribute="bottom" constant="8" symbolic="YES" id="FZl-7d-tj7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qsV-rz-7w2" secondAttribute="trailing" id="HaB-WO-YKz"/>
+                            <constraint firstItem="0Jj-ah-h8u" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ILE-IF-uXE"/>
+                            <constraint firstItem="0Jj-ah-h8u" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="100" id="JD7-1G-DMU"/>
+                            <constraint firstItem="qsV-rz-7w2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JxR-jr-UrN"/>
+                            <constraint firstAttribute="trailing" secondItem="0Jj-ah-h8u" secondAttribute="trailing" constant="44" id="M88-TM-NrG"/>
+                            <constraint firstItem="qsV-rz-7w2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="VXB-Ok-UwU"/>
+                            <constraint firstItem="wV4-JJ-lhv" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="Xyw-U6-2Iv"/>
+                            <constraint firstItem="qsV-rz-7w2" firstAttribute="top" secondItem="0Jj-ah-h8u" secondAttribute="bottom" constant="8" id="Zqd-nt-Xfl"/>
+                            <constraint firstItem="XbG-DT-iay" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="80" id="q8b-Ss-YXy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qsV-rz-7w2" secondAttribute="bottom" id="qsY-7z-yTZ"/>
+                            <constraint firstItem="wV4-JJ-lhv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="rjR-tc-Lpt"/>
+                            <constraint firstItem="XbG-DT-iay" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xI5-t3-NkL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="0Jj-ah-h8u" id="ron-Vs-oX4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Canva - Photography of Stars and Galaxy" width="2886" height="4329"/>
+        <image name="ЗАПОЧНИ" width="1000" height="800"/>
+    </resources>
+</document>
